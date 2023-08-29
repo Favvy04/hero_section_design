@@ -1,0 +1,116 @@
+*{
+ margin:0;
+ padding:0;
+}
+body {
+    height:100vh;
+    font-family: sans-serif;
+}
+.bgd{
+    background-image: url("images/pexels-freestocksorg-129062.jpg");
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#overlay{
+       width:100%;
+       height:100vh;
+       background-color: rgba(33, 31, 31, 0.795);
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+h1{
+    margin-left:40px;
+    margin-top:12px;
+    font-size:24px;
+    color:white;
+}
+
+nav{
+    margin-top:8px;
+    font-size:14px;
+    position:relative;
+    
+}
+.interior{
+    margin-right:20px;
+}
+.bed{
+    margin-right:20px;
+}
+.din{
+    margin-right:20px;
+}
+.kit{
+    margin-right:20px;
+}
+.back{
+    margin-right:40px;
+}
+nav a{
+    text-decoration:none;
+    text-transform:uppercase;
+    color:white;
+}
+nav::after{
+    content:'';
+    height:3px;
+    width:0;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+}
+nav:hover::after{
+    width:93%;
+}
+.content{
+    text-align:center;
+    margin-top:220px;
+    color:white;
+}
+/* h1{
+    font-size:70px;
+} */
+p{
+    margin-top:25px;
+}
+button{
+    width:200px;
+    padding:16px 0px;
+    border-radius:25px;
+    border:1px solid #009688;
+    text-align:center;
+    margin:45px 10px;
+    font-weight:bold;
+    background: transparent;
+    color:white;
+    cursor:pointer;
+    transform:translateX(450px);
+    position:relative;
+    overflow:hidden;
+}
+span{
+    position:absolute;
+    background:#009688;
+    height:0;
+    width:0;
+    border-radius:25px;
+    bottom:0;
+    left:0;
+    transition:0.5s;
+    z-index:-1;
+}
+ button:hover span{
+    width:100%;
+    height:100%;   
+}
+button:hover {
+    border:none;
+}
